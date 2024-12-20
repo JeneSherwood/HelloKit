@@ -29,7 +29,7 @@ type Endpoints struct {
 }
 
 // MakeConcatEndpoint creates the Concat endpoint
-func MakeConcatEndpoint(svc Service) endpoint.Endpoint {
+func MakeConcatEndpoint1(svc Service) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (interface{}, error) {
 		req := request.(concatRequest)
 		v := svc.Concat(req.A, req.B)
@@ -38,12 +38,12 @@ func MakeConcatEndpoint(svc Service) endpoint.Endpoint {
 }
 
 // concatRequest and concatResponse define the request and response structures
-type concatRequest struct {
+type concatRequest1 struct {
 	A string `json:"a"`
 	B string `json:"b"`
 }
 
-type concatResponse struct {
+type concatResponse1 struct {
 	V string `json:"v"`
 }
 

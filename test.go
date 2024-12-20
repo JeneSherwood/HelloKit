@@ -35,3 +35,16 @@ func TestConcatEndpoint(t *testing.T) {
 	t.Log("concat endpoint test passed")
 	t.Log(svc.Concat("hello", "world"))
 }
+func TestConcatEndpoint2(t *testing.T) {
+	svc := &concatService{}
+	ep := MakeConcatEndpoint(svc)
+
+	request := concatRequest{A: string(10), B: string(20)}
+	_, err := ep(context.Background(), request)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	t.Log("concat endpoint test passed")
+	t.Log(svc.Concat("hello", "world"))
+}
