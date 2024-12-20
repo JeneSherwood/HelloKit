@@ -14,11 +14,13 @@ type concatRequest struct {
 	Text1 string `json:"text1"`
 	Text2 string `json:"text2"`
 	A     string
+	B     string
 }
 
 // concatResponse is a simple struct to represent the outgoing response
 type concatResponse struct {
 	ConcatenatedText string `json:"concatenatedText"`
+	V                string
 }
 
 // ConcatService is an interface that defines the concatenation logic

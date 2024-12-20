@@ -48,3 +48,31 @@ func TestConcatEndpoint2(t *testing.T) {
 	t.Log("concat endpoint test passed")
 	t.Log(svc.Concat("hello", "world"))
 }
+
+type name interface {
+}
+
+func (c concatService) Concat1(s string, s2 string) string {
+	//TODO implement me
+	panic("implement me")
+}
+func (c concatService) Concat2(s string, s2 string) string {
+	//TODO implement me
+	panic("implement me")
+}
+func (c concatService) Concat3(s string, s2 string) string {
+	//TODO implement me
+	panic("implement me")
+}
+func (c concatService) Concat4(s string, s2 string) string {
+	//TODO implement me
+	panic("implement me")
+}
+
+type concatService2 struct {
+}
+
+func (c concatService2) Concat(s string, s2 string) string {
+	//TODO implement me
+	panic("implement me")
+}
