@@ -1,0 +1,13 @@
+{
+  "index": {
+    "fields": [
+      "docType",
+      "security.create_time"
+    ]
+  },
+  "ddoc": "securityCreateTimeIndexDoc",
+  "name": "securityCreateTimeIndex",
+  "type": "json"
+}
+
+

@@ -1,0 +1,19 @@
+# Goland
+*.iml
+*.ipr
+*.iws
+.idea/
+
+#vscode
+*/.vscode/*
+.vscode/*
+
+*.zip
+*.tar.gz
+*.gz
+
+#vendor
+vendor/
+
+#build
+main
